@@ -1,0 +1,44 @@
+body {
+    background-image: url("img/tlo.png");
+    font-family: 'Noto Serif', serif;
+}
+
+#logo {
+    width: 1000px;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: rgb(185, 229, 255);
+    color: rgb(85, 85, 85);
+    border-bottom: rgb(132, 144, 184);
+    border-left: 3px solid rgb(69, 201, 224);
+    border-right: 3px solid rgb(69, 201, 224);
+    border-top: 3px solid rgb(69, 201, 224);
+    border-bottom: 3px solid rgb(69, 201, 224);
+    font-weight: 700;
+}
+
+#container{
+    width: 1000px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(233, 247, 255);
+    color: rgb(85, 85, 85);
+    width: 1000px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(233, 247, 255);
+    color: rgb(85, 85, 85);
+    border-bottom: rgb(185, 229, 255);
+    border-left: 3px solid  rgb(185, 229, 255);
+    border-right: 3px solid  rgb(185, 229, 255);
+    border-top: 3px solid  rgb(185, 229, 255);
+  
+}
