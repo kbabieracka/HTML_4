@@ -42,3 +42,12 @@ body {
     border-top: 3px solid  rgb(185, 229, 255);
   
 }
+
+.opis {
+    float: left;
+}
+
+#img {
+    float: left;
+
+}
