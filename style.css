@@ -56,6 +56,13 @@ body {
     
 }
 
+.nazwa:hover {
+    background-color: rgb(177, 217, 241);
+    font-size: 27px;
+
+
+}
+
 .img{
     width: 454px;
     height: 278px;
@@ -76,4 +83,9 @@ body {
     padding-top: 5px;
     background-color: rgb(228, 233, 236) ;
 
+}
+
+.opis:hover {
+    background-color: rgb(255, 255, 255) ;
+    font-weight: 700;
 }
