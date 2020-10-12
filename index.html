@@ -11,8 +11,49 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     
-    
     <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src= "jquery.scrollTo.min.js"></script>
+
+    <script>
+        jQuery(function($)
+        {
+            $.scrollTo(0);
+
+            $('#link1').click(function() { $.scrollTo($('#american'), 500); });
+            $('#link2').click(function() { $.scrollTo($('#abyssinian'), 500); });
+            $('#link3').click(function() { $.scrollTo($('#crested'), 500); });
+            $('#link4').click(function() { $.scrollTo($('#americancrested'), 500); });
+            $('#link5').click(function() { $.scrollTo($('#teddy'), 500); });
+            $('#link6').click(function() { $.scrollTo($('#rex'), 500); });
+            $('#link7').click(function() { $.scrollTo($('#ridgeback'), 500); });
+            $('#link8').click(function() { $.scrollTo($('#crestedridgeback'), 500); });
+            $('#link9').click(function() { $.scrollTo($('#curly'), 500); });
+            $('#link10').click(function() { $.scrollTo($('#skinny'), 500); });
+            $('#link11').click(function() { $.scrollTo($('#baldwin'), 500); });
+            $('#link12').click(function() { $.scrollTo($('#peruvian'), 500); });
+            $('#link13').click(function() { $.scrollTo($('#boucle'), 500); });
+            $('#link14').click(function() { $.scrollTo($('#sheltie'), 500); });
+            $('#link15').click(function() { $.scrollTo($('#texel'), 500); });
+            $('#link16').click(function() { $.scrollTo($('#coronet'), 500); });
+            $('#link17').click(function() { $.scrollTo($('#merino'), 500); });
+            $('#link18').click(function() { $.scrollTo($('#angora'), 500); });
+            
+
+
+
+        }
+        );
+
+        $(window).scroll(function()
+        {
+            if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+            else $('.scrollup').fadeOut();
+        }
+        );
+    </script>
 
 </head>
 
@@ -22,39 +63,41 @@
     
     
     <div id="container">
-        <ol>
-            <li>Świnki krótkowłose</li>
-                <ul>
-                    <li>Amerykańska (American)</li>
-                    <li>Rozetka (Abyssinian)</li>
-                    <li>Czubatka (Crested)</li>
-                    <li>Czubatka biała (American Crested)</li>
-                    <li>Misia (Teddy)</li>
-                    <li>Królewia (Rex)</li>
-                    <li>Grzbietka (Ridgeback)</li>
-                    <li>Grzbietka czubata (Crested Ridgeback)</li>
-                    <li>Kędzierzawa (Curly)</li>
-                </ul>
-            <li>Świnki bezwłose</li>
-                <ul>
-                    <li>Mizerotka (Skinny)</li>
-                    <li>Balwin (Baldwin)</li>
-                </ul>
-            <li>Świnki długowłose</li>
-                <ul>
-                    <li>Peruwianka (Peruvian)</li>
-                    <li>Alpaka (Boucle)</li>
-                    <li>Jedwabia (Sheltie)</li>
-                    <li>Królewia jedwabia (Texel)</li>
-                    <li>Czubatka królewia (Coronet)</li>
-                    <li>Czubatka kędzierzawa (Merino)</li>
-                    <li>Angorka (Angora)</li>
-                </ul>   
-        </ol>
-    
+        <a href="#" class="scrollup"></a>
+        <div id="spis">
+            <ol>
+                <li>Świnki krótkowłose</li>
+                    <ul>
+                        <li><a id="link1" href="#american">Amerykańska (American)</a></li>
+                        <li><a id="link2" href="#abyssinian">Rozetka (Abyssinian)</a></li>
+                        <li><a id="link3" href="#crested">Czubatka (Crested)</a></li>
+                        <li><a id="link4" href="#americancrested">Czubatka biała (American Crested)</a></li>
+                        <li><a id="link5" href="#teddy">Misia (Teddy)</a></li>
+                        <li><a id="link6" href="#rex">Królewia (Rex)</a></li>
+                        <li><a id="link7" href="#ridgeback">Grzbietka (Ridgeback)</a></li>
+                        <li><a id="link8" href="#crestedridgeback">Grzbietka czubata (Crested Ridgeback)</a></li>
+                        <li><a id="link9" href="#curly">"Kędzierzawa (Curly)</a></li>
+                    </ul>
+                <li>Świnki bezwłose</li>
+                    <ul>
+                        <li><a id="link10" href="#skinny">Mizerotka (Skinny)</a></li>
+                        <li><a id="link11" href="#baldwin">Balwin (Baldwin)</a></li>
+                    </ul>
+                <li>Świnki długowłose</li>
+                    <ul>
+                        <li><a id="link12" href="#peruvian">Peruwianka (Peruvian)</a></li>
+                        <li><a id="link13" href="#boucle">Alpaka (Boucle)</a></li>
+                        <li><a id="link14" href="#sheltie">Jedwabia (Sheltie)</a></li>
+                        <li><a id="link15" href="#texel">Królewia jedwabia (Texel)</a></li>
+                        <li><a id="link16" href="#coronet">Czubatka królewia (Coronet)</a></li>
+                        <li><a id="link17" href="#merino">Czubatka kędzierzawa (Merino)</a></li>
+                        <li><a id="link18" href="#angora">Angorka (Angora)</a></li>
+                    </ul>   
+            </ol>
+        </div>
  
         <div class="slajd">
-            <div class="nazwa"> Amerykańska (American) </div>
+            <div class="nazwa" id="american"> Amerykańska (American) </div>
             <div class="img"><img src="img/american.jpg" width="454" height="278" <a title="american"> </a> </div>
             <div class="opis"> Świnka ma krótkie, gładkie i przylegające do ciała futerko. Występuje niemal 
                 w dwudziestu kolorach. Długość włosia wynosi ok. 18mm. Widziana z góry ma tułów mniej więcej
@@ -65,143 +108,193 @@
         </div>
 
         <div class="slajd">
-            <div class="nazwa"> Rozetka (Abyssinian)  </div>
+            <div class="nazwa" id="abyssinian"> Rozetka (Abyssinian)  </div>
             <div class="img"><img src="img/abyssinian.jpg" width="454" height="278" <a title="abyssinian"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Włosy tej świnki układają się w różnych punktach ciała w tzw. rozetki.
+                Są one umieszczone na ciele świnki na biodrach, grzbiecie, zadzie, a u niektórych świnek również na łapkach. 
+                Świnki rozetkowe są tym bardziej "idealne" im bardziej wyraźne i strome są rozetki oraz wtedy gdy ich liczba
+                dochodzi do dziesięciu. Sierść świnek jest sprężysta i szorstka oraz odstaje od ciała na odległość do 4 cm.
+                Za sprawą specyficznej struktury włosa oraz licznym rozetkom świnka morska tej rasy sprawia werażenie rozczochranej.  </div>
 
         </div>
         
         
         <div class="slajd">
-            <div class="nazwa"> Czubatka (Crested) </div>
+            <div class="nazwa" id="crested"> Czubatka (Crested) </div>
             <div class="img"><img src="img/crested.jpg" width="454" height="278" <a title="crested"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Rasa ta nosi cechy typowe dla gładkowłosej Amerykanki a jej cechą charakterystyczną jest umieszczona na głowie
+                pojedyncza rozetka. Reszta futra gładko przylega do ciała, sierść jest krótka i zazwyczaj jednokolorowo umaszczona. 
+                Specyficzna rozetka, którą zwierze posiada, powinna mieć wyraźnie widoczny środek a dzięki swojemu umiejscowieniu
+                zwana jest często koroną. </div>
 
         </div>
         
         
         <div class="slajd">
-            <div class="nazwa"> Czubatka biała (American Crested)  </div>
+            <div class="nazwa" id="americancrested"> Czubatka biała (American Crested)  </div>
             <div class="img"><img src="img/americancrested.jpg" width="454" height="278" <a title="americancrested"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Odmiana Czubatki, różniąca się od tej wyżej wymienionej wymaganiem jednokolorowego umaszczenia. Kolejnym wymogiem jest
+                biała rozetka (korona), która zdobi czubek głowy świnki. Żaden biały włos nie może znajdować się poza koroną oraz w koronie 
+                nie może znaleźć się ani jeden włos o innym kolorze niż biały. Pojedyncza rozetka powinna być również idealnie okrągła i zarysowana. 
+                Z powodu wielu rygorystycznych wymagań świnka ta jest ciężka do wyhodowania.  </div>
 
         </div>
         
         
         <div class="slajd">
-            <div class="nazwa"> Misia (Teddy) </div>
+            <div class="nazwa" id="teddy"> Misia (Teddy) </div>
             <div class="img"><img src="img/teddy.jpg" width="454" height="278" <a title="teddy"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Świnka zawdzięcza powyższą nazwę swojemu wyjątkowemu i uroczemu wyglądowi. Gryzoń upodabnia się dzięki temu do pluszowego misia,
+                którego futerko jest krótkie i szorstkie.
+               U odmiany,  CH w przeciwieństwie do krótkowłosej US, długość włosa może dochodzić nawet do 6 cm i zwracać uwagę gęstością, 
+               równomiernym rozłożeniem i skręceniem w okolicy brzucha.
+               łapki, wyrażnie okrągła głowa oraz lekko oklapnięte uszka.  </div>
 
         </div>
         
         
         <div class="slajd">
-            <div class="nazwa"> Królewia (Rex) </div>
+            <div class="nazwa" id="rex"> Królewia (Rex) </div>
             <div class="img"><img src="img/rex.jpg" width="454" height="278" <a title="rex"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Rasa ta rozwinęła się w roku 1919. Odróżnia się krótkim, gładkim i wełnistą strukturą włosa, którego długość zwykle dochodzi  
+                do 2 cm długości. U "idealnego" okazu Królewi wełniste futerko jest bardzo gęste, a każdy włos odstaje od ciała pod kątem 
+                90 stopni. Taka struktura sierści skutecznie ochrania świnkę przed wilgocią. Przypomina trochę świnkę 
+                Misią z tą różnicą, że ma dużo delikatniejszą sierść. </div>
 
         </div>
         
         
         <div class="slajd">
-            <div class="nazwa"> Grzbietka (Ridgeback)  </div>
+            <div class="nazwa" id="ridgeback"> Grzbietka (Ridgeback)  </div>
             <div class="img"><img src="img/ridgeback.jpg" width="454" height="278" <a title="ridgeback"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Rasa ta charakteryzuje się niezwykle ciekawym układem włosów, które, w przypadku tych 
+                świnek zawijają się wzdłuż kręgosłupa i tworzą wyraźnie widoczną linia sierści. Włosy na grzbiecie przypominają 
+                wtedy swoją formą - irokeza. Swoją specyficzną "fryzurę" kawia uzyskuje dopiero po ukończeniu czwartego tygodnia życia,
+                przez co młode świnki Grzbietki są nierozróżnialne od małych Amerykanek. Dzieję się tak ponieważ włos młodych 
+                kawii jest jeszcze zbyt cienki i wiotki aby utworzyć "irokeza".  </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Grzbietka czubata (Crested Ridgeback) </div>
+            <div class="nazwa" id="crestedridgeback"> Grzbietka czubata (Crested Ridgeback) </div>
             <div class="img"><img src="img/crestedridgeback.jpg" width="454" height="278" <a title="crestedridgeback"> </a></div>
-            <div class="opis"> </div>
+            <div class="opis"> Grzbietki są krzyżówkami świnek gładkowłosych z peruwiankami lub z rozetkami. Grzbietki czubate
+                oprócz charakterystycznego "irokeza" biegnącego wzdłuż ich kręgosłupa posiadają dodatkowo ozdobną
+                pojedynczą i niewielką rozetkę na głowie.
+                 </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Kędzierzawa (Curly)  </div>
+            <div class="nazwa" id="curly"> Kędzierzawa (Curly)  </div>
             <div class="img"><img src="img/curly.jpg" width="454" height="278" <a title="curly"> </a></div>
-            <div class="opis"> </div>
+            <div class="opis"> Świnka ta posiada krótkie i mocno skręcone włosy, które mimo iż na pierwszy rzut oka wyglądają na delikatne i miękkie w rzeczywistości 
+                są dosyć szorstkie w dotyku czyli szczeciniaste i twarde. Powstała ona przez skrzyżowania Królewii z Rozetką. 
+                Rasa ta została stworzona w Europie a konkretnie w Skandynawii w latach osiemdziesiątych.  </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Mizerotka (Skinny) </div>
+            <div class="nazwa" id="skinny"> Mizerotka (Skinny) </div>
             <div class="img"><img src="img/skinny.jpg" width="454" height="278" <a title="skinny"> </a>  </div>
-            <div class="opis"> </div>
+            <div class="opis"> Jest to świnka, która została wyhodowana w warunkach laboratoryjnych. Należy ona do kawii bezwłosych, 
+                których cechą charakterystyczną są nieduże kępki nastroszonej
+                sierści na stopach, uszach oraz pyszczku. Skóra swinki jest niezwykle aksamitna i delikatna w dotyku i jednocześnie bardzo wrażliwa.
+                Do utrzymania temperatury ciała świnki te wymagają wysoko energetycznego pożywienia. 
+                Brak włosów determinowany jest recesywnym genem. Chcąc zachowania tej cechy, nie nalezy ich mieszać ze świnkami owłosionymi. </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Balwin (Baldwin) </div>
+            <div class="nazwa" id="baldwin"> Balwin (Baldwin) </div>
             <div class="img"><img src="img/baldwin.jpg" width="454" height="278" <a title="baldwin"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Jest to druga i ostatnia rasa wśród świnek pozbawionych włosów. W przeciwieństwie do Mizerotki Balwiny rodzą się owłosione i tracą swoje wszysatkie włosy 
+                wraz z biegiem czasu i stają się kompletnie nagie. Kolejną cechą różniącą te dwie odmiany jest struktura skóry Balwina, która jest bardzo twarda i gruba co sprawia, że świnka 
+                ta jest nieco lepiej zabezpieczona przed różnego typu urazami lub podrażnieniami. Rasa ta również została wyhodowana sztucznie w 1978 roku. </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Peruwianka (Peruvian)  </div>
+            <div class="nazwa" id="peruvian"> Peruwianka (Peruvian)  </div>
             <div class="img"><img src="img/peruwian.jpg" width="454" height="278" <a title="peruwian"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Jest jedną z najbardziej rozpoznawalnych długowłosych ras kawii domowych. Długość jej włosa, który jest regularnie papilotowany
+                może sięgać nawet do 50 cm, jednak zwykle ściera się o podłoże i osiąda długość kilkunastu centymetrów. Sierść, która jest
+               delikatna i połyskliwa rozkłada się równomiernie
+               wzdłuż całego kręgosłupa od środka, do zewnątrz, na wszystkie strony. Sprawia to, że czasami trudno rozróżnić gdzie świnka ma przód, a gdzie tył.  
+               W tylnych częściach ciała kawii znajdują się dwie rozetki. 
+                </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Alpaka (Boucle)  </div>
+            <div class="nazwa" id="boucle"> Alpaka (Boucle)  </div>
             <div class="img"><img src="img/boucle.jpg" width="454" height="278" <a title="boucle"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Alpaka jest odmianą, która powstała poprzez skrzyżowanie Peruwianki z Królewią Jedwabią. Jej głównym znakiem rozpoznawczym są długie, kręcone
+                włosy. U niektórych osobników w okolicach tylnych rozetek znajdują się pewne zawirowania, które pomimo tego, że są praktycznie niewidoczne pod długim włosiem
+                u dorosłych osobników są niemile widziane przez hodowców, dla których jest to cecha niepożądana. </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Jedwabia (Sheltie)  </div>
+            <div class="nazwa" id="sheltie"> Jedwabia (Sheltie)  </div>
             <div class="img"><img src="img/sheltie.jpg" width="454" height="278" <a title="sheltie"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis">Jedwabie określane są również mianem Silkie. Ich główną cechą odróżniającą tę odmianę od Peruwianek jest brak zawirowań występujących 
+                w futerku. Jedwabia ma długą okrywę włosową na ciele, z wyłączeniem głowy. Futerko na pyszczku jest krótkie, ale wydłuża się w okolicach oczu
+                oraz na polikach. Sierść jest prosta, gładka i skierowana do tyłu. Głowa powinna być zaokrąglona a oczy duże i równo osadzone. Jedwabia jest genetycznie
+                Amerykanką o długich włosach. Pojawiła się w 1973 roku.  </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Królewia jedwabia (Texel)  </div>
+            <div class="nazwa" id="texel"> Królewia jedwabia (Texel)  </div>
             <div class="img"><img src="img/texel.jpg" width="454" height="278" <a title="texel"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Świnka ta ma długie i delikatnie kręcone włosy a ich struktura jest aksamitna i przyjemna w dotyku, nie szorstka jak w przypadku świnki Misiej. Idealne kosmyki
+                układają się w kształt ścisłych korkociągów a po rozczesaniu robią się faliste. Powstała z połączenia Jedwabi z Królewią a hodowcy pracowali wiele lat aby 
+                wyeliminować charakterystyczną szczeciniastość. </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Czubatka królewia (Coronet) </div>
+            <div class="nazwa" id="coronet"> Czubatka królewia (Coronet) </div>
             <div class="img"><img src="img/coronet.jpg" width="454" height="278" <a title="coronet"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Odmianę tej kawii domowej otrzymano ze skrzyżowania Jedwabii z Czubatką. Włosy świnki są proste i  bardzo długie. Jej znakiem szczególnym jest pojedyncza rozetka
+                znajdująca się na czubku głowy, która nazywana jest przez to koroną. Powinna być ona możliwie jak największa posiadając tym samym jak najmniejszy 
+                środek, który znajduje się dokładnie w centrum czworokąta, którego wierzchołkami są oczy i uszy gryzonia.  </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Czubatka kędzierzawa (Merino) </div>
+            <div class="nazwa" id="merino"> Czubatka kędzierzawa (Merino) </div>
             <div class="img"><img src="img/merino.jpg" width="454" height="278" <a title="merino"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis"> Jest ona odmianą Czubatki królewiej, która cechuje się kręconymi włosami. Podobnie jak swoja poprzedniczka świnka ma ma dużą, pojedynczą rozetę na głowie. 
+                Korona jest najtrudniejszym elementem do wyhodowania, ponieważ dążąc do ideału powinna być ona jak największa, wysoka i otwarta z możliwie jak najmniejszym środkiem. Nazwa Merino 
+                pochodzi od gatunku hiszpańskiej owcy i odnosi się tym samym do gęsto kręconych włosów świnki przypominających runo.  </div>
 
         </div>
 
           
         <div class="slajd">
-            <div class="nazwa"> Angorka (Angora) </div>
+            <div class="nazwa" id="angora"> Angorka (Angora) </div>
             <div class="img"><img src="img/angora.jpg" width="454" height="278" <a title="angora"> </a> </div>
-            <div class="opis"> </div>
+            <div class="opis">Ta długowłosa kawia jest idealnym odzwierciedleniem świnki rozetkowej, przy czym oczywiście włos w tym przypadku jest o wiele dłuższy. Z rasy tej powstała odmiana Moherki,
+                o kręconym włosie.
+                 </div>
 
         </div>
         
         
     
-    <div id="footer"></div>
+    <div id="footer">DBAJMY O NASZE ŚWINIACZKI!</div>
 
 
 

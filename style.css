@@ -37,6 +37,30 @@ body {
   
 }
 
+#footer {
+    width: 950px;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: rgb(185, 229, 255);
+    color: rgb(85, 85, 85);
+    border-bottom: rgb(132, 144, 184);
+    border-left: 3px solid rgb(69, 201, 224);
+    border-right: 3px solid rgb(69, 201, 224);
+    border-top: 3px solid rgb(69, 201, 224);
+    border-bottom: 3px solid rgb(69, 201, 224);
+    font-weight: 700;
+}
+
+#spis{
+    padding-left: 50px;
+}
+
 .slajd{
     width: 1000px;
     height: 400px;
@@ -88,4 +112,71 @@ body {
 .opis:hover {
     background-color: rgb(255, 255, 255) ;
     font-weight: 700;
+}
+
+ol {
+    margin-top: 5px;
+}
+
+ol > li {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+ol > li:before {
+    content: "⚬";
+    color: rgb(6, 132, 170);
+    margin-right: 9px; 
+}
+
+ul {
+    margin-left: 5px;
+    list-style-type: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+
+ul > li:before {
+    content: "☙";
+    color: rgb(49, 186, 228);
+    margin-right: 7px;
+}
+
+a:link {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(11, 83, 105);
+}
+
+a:active {
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+
+}
+
+.scrollup {
+    width: 269px;
+    height: 192px;
+    text-decoration: none;
+    background: url("img/przycisk.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px; 
+    display: none;
 }
